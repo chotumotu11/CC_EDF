@@ -36,7 +36,7 @@ int findInphase(struct tasks *taskSet, int elements){
 
 	int inphasef = 10,  flag = 0,  FOUND = 1, it =0;
 
-	while(flag == 0 && inphasef--){
+	while(flag == 0 ){ // removing inphasef from while condition
 		FOUND = 1;
 		int val = inphase[0];
 		//printf("val: %d\n", val);
