@@ -198,7 +198,7 @@ struct job * createjoblist(struct tasks *t,int n, int total, int hyp){
 
 void printerj(struct job *jb,int total){
 	for(int i = 0;i<total;i++){
-		printf("J%d%d exe = %f, arrival=%d, deadline=%d\n",jb[i].oftask,jb[i].job,jb[i].exe,jb[i].arrival,jb[i].deadline);
+		printf("J%d%d exe = %f, wcet = %f ,arrival=%d, deadline=%d\n",jb[i].oftask,jb[i].job,jb[i].exe,jb[i].wctexe,jb[i].arrival,jb[i].deadline);
 	}
 }
 
@@ -278,7 +278,23 @@ struct job * addreadyqueue(struct job r,struct job *head){
 
 
 
-struct job*  removejobfromqueue(struct job *new1,struct job * accepted){
+struct job*  removeheadfromjob(struct job * accepted){
+
+	if(accepted == NULL){
+		return NULL;
+	}
+
+	if(accepted->next == NULL){
+		accepted = NULL;
+		return accepted;
+	}
+
+	struct job *helper = accepted;
+	accepted = accepted->next;
+	accepted->prev = NULL;
+	return accepted;
+
+	/*
     if(accepted == NULL){
         accepted = NULL; //nothing to remove.
     }else if(accepted->next == NULL){
@@ -307,15 +323,19 @@ struct job*  removejobfromqueue(struct job *new1,struct job * accepted){
     }
 
     return accepted;
+    */
 }
 
 
 
 
-struct job* loadtoreadyqueuewitharrivaltime(struct job *joblist,int arrivaltime,int totaljobs,struct job *head){
+struct job* loadtoreadyqueuewitharrivaltime(struct job *joblist,struct taskutil * tu,int arrivaltime,int totaljobs,struct job *head){
 	for(int i = 0;i<totaljobs;i++){
 		if(joblist[i].arrival==arrivaltime){
 			//printf("The total number of jobs %d\n",totaljobs);
+			if(joblist[i].job != 1){
+				tu[joblist[i].oftask].runtime = joblist[i].wctexe; 
+			}
 			head=addreadyqueue(joblist[i],head);
 		}
 	}
@@ -332,9 +352,15 @@ void wcetapply(struct job *j){
 	j->slack = (j->slack)*ran;
 }
 
+void wcetapplyalljobs(struct job *j,int numofjobs){
+	for(int i = 0;i<numofjobs;i++){
+		wcetapply(j+i);
+	}
+}
+
 void applyalphatime(struct job *j,float freq,float maxfreq){
 	float alpha = freq/maxfreq;
-	j->slack = (j->wctexe)/alpha;
+	j->slack = (j->slack)/alpha;
 }
 
 void insertintog(struct job *j,struct granularity *f){
@@ -407,82 +433,70 @@ void printreadyqueue(struct job * head){
 	printf("I am priting ready queue\n");
 	struct job * helper = head;
 	while(helper!=NULL){
-		printf("J%d%d\n",helper->oftask,helper->job);
+		printf("J%d %d\n",helper->oftask,helper->job);
 		helper=helper->next;
 	}
 
 }
 
 void jobschedule(struct job * joblist,struct granularity *g,int bmax,struct job *head,int totaljobs,float freq,float maxfreq,struct taskutil *tu,float *freqarray,int numoftasks,int numfreq){
-	for(int i =0;i<bmax;i++){
-		printf("jobschedule %d\n",i);
-		head = loadtoreadyqueuewitharrivaltime(joblist,(g+i)->starttime,totaljobs,head);
-		//printreadyqueue(head);
-		while(head!=NULL && g[i].slack!=0){
-			printf("The slack of %d frame is %f\n",i,g[i].slack);
-			if(jobexecuting==NULL){
-				jobexecuting=head;
-				head=removejobfromqueue(head,head);
-				if(jobexecuting->executed == 0){
-					wcetapply(jobexecuting);
-					jobexecuting->executed = 1;
-				}
-				applyalphatime(jobexecuting,freq,maxfreq);
-				if(g[i].slack<jobexecuting->slack){
-					jobexecuting->slack -= g[i].slack;
-					g[i].slack=0;
-					freq = findfreq(freqarray,maxfreq,numoftasks,tu,numfreq);
+	for(int i =0 ;i<bmax;i++){
+		head = loadtoreadyqueuewitharrivaltime(joblist,tu,(g+i)->starttime,totaljobs,head);
+		while(g[i].slack!=0 && head!=NULL){
+			if(jobexecuting == NULL){
+				jobexecuting = head;
+				head=removeheadfromjob(head);
+				jobexecuting->slack = (jobexecuting->slack)/(freq/maxfreq);
+				if(g[i].slack < jobexecuting->slack){
+					jobexecuting->slack = (jobexecuting->slack)-g[i].slack;
+					g[i].slack = 0;
+					jobexecuting->slack = (jobexecuting->slack)*(freq/maxfreq);
 					insertintog(jobexecuting,g+i);
 				}else{
-					g[i].slack = g[i].slack - jobexecuting->slack;
-					jobexecuting=NULL;
+					jobexecuting = NULL;
+					g[i].slack = g[i].slack-(jobexecuting->slack);
+					jobexecuting->slack = 0;
 					tu[jobexecuting->oftask].runtime = jobexecuting->wctexe;
 					freq = findfreq(freqarray,maxfreq,numoftasks,tu,numfreq);
 					insertintog(jobexecuting,g+i);
 				}
+
 			}else{
-				if(head->deadline<jobexecuting->deadline){
-					struct job * co = head;
+				if((jobexecuting->deadline)>(head->deadline)){
+					freq = findfreq(freqarray,maxfreq,numoftasks,tu,numfreq);
+					inserttoreadyqueuewithoutcopy(jobexecuting,head);
 					jobexecuting = head;
-					head = inserttoreadyqueuewithoutcopy(co,head);
-					if(jobexecuting->executed == 0){
-						wcetapply(jobexecuting);
-						jobexecuting->executed = 1;
-					}
-					applyalphatime(jobexecuting,freq,maxfreq);
-					if(g[i].slack<jobexecuting->slack){
-						jobexecuting->slack -= g[i].slack;
-						g[i].slack=0;
-						freq = findfreq(freqarray,maxfreq,numoftasks,tu,numfreq);
+					jobexecuting->slack = (jobexecuting->slack)/(freq/maxfreq);
+					if(g[i].slack < jobexecuting->slack){
+						jobexecuting->slack = (jobexecuting->slack)-g[i].slack;
+						g[i].slack = 0;
+						jobexecuting->slack = (jobexecuting->slack)*(freq/maxfreq);
 						insertintog(jobexecuting,g+i);
 					}else{
-						g[i].slack = g[i].slack - jobexecuting->slack;
-						jobexecuting=NULL;
+						jobexecuting = NULL;
+						g[i].slack = g[i].slack-(jobexecuting->slack);
+						jobexecuting->slack = 0;
 						tu[jobexecuting->oftask].runtime = jobexecuting->wctexe;
 						freq = findfreq(freqarray,maxfreq,numoftasks,tu,numfreq);
 						insertintog(jobexecuting,g+i);
 					}
+
 				}else{
-					if(jobexecuting->executed == 0){
-						wcetapply(jobexecuting);
-						jobexecuting->executed = 1;
-					}
-					applyalphatime(jobexecuting,freq,maxfreq);
-					if(g[i].slack<jobexecuting->slack){
-						jobexecuting->slack -= g[i].slack;
-						g[i].slack=0;
-						freq = findfreq(freqarray,maxfreq,numoftasks,tu,numfreq);
+					jobexecuting->slack = (jobexecuting->slack)/(freq/maxfreq);
+					if(g[i].slack < jobexecuting->slack){
+						jobexecuting->slack = (jobexecuting->slack)-g[i].slack;
+						g[i].slack = 0;
+						jobexecuting->slack = (jobexecuting->slack)*(freq/maxfreq);
 						insertintog(jobexecuting,g+i);
 					}else{
-						g[i].slack = g[i].slack - jobexecuting->slack;
-						jobexecuting=NULL;
+						jobexecuting = NULL;
+						g[i].slack = g[i].slack-(jobexecuting->slack);
+						jobexecuting->slack = 0;
 						tu[jobexecuting->oftask].runtime = jobexecuting->wctexe;
 						freq = findfreq(freqarray,maxfreq,numoftasks,tu,numfreq);
 						insertintog(jobexecuting,g+i);
 					}
-
 				}
-
 			}
 		}
 	}
@@ -591,5 +605,7 @@ int main(int argc,char **argv){
 	//head = loadtoreadyqueuewitharrivaltime(newjoblist,0,n,head);
 	//printreadyqueue(head);
 	//wcetapply();
+	//wcetapplyalljobs(newjoblist,totalnumjobs);
+	//printerj(newjoblist,totalnumjobs);
 	return 0;
 }
