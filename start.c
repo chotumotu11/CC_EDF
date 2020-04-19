@@ -615,7 +615,7 @@ void printresponseTime(struct granularity *g,int bmax ,int numtask){
 		float maxResponseTime = -1;
 		float minResponseTime = -1;
 		float avgResponseTime =-1;
-		
+
 	    struct job * travers_temp = finaljoblist;
 		int totaljobs = 0;
 		while(travers_temp != NULL)
@@ -636,7 +636,7 @@ void printresponseTime(struct granularity *g,int bmax ,int numtask){
 	       		if(maxResponseTime == -1 && temp_response >= 0)
 				{
 					maxResponseTime = temp_response;
-					ovmaxResponseTime=temp_response;
+				//	ovmaxResponseTime=temp_response;
 				}
 				else
 				{
@@ -646,7 +646,7 @@ void printresponseTime(struct granularity *g,int bmax ,int numtask){
 				if(minResponseTime == -1 && temp_response >= 0)
 				{
 				    minResponseTime = temp_response;
-				    ovminResponseTime=temp_response;
+				 //   ovminResponseTime=temp_response;
 				}
 				else
 				{
@@ -656,13 +656,34 @@ void printresponseTime(struct granularity *g,int bmax ,int numtask){
 			}
 			travers_temp = travers_temp->next;
 		}
-		if(ovmaxResponseTime<maxResponseTime)
-			ovmaxResponseTime=maxResponseTime;
-		if(ovminResponseTime>minResponseTime)
-			ovminResponseTime=minResponseTime;
+
+		if(ovmaxResponseTime == -1)
+		{
+			ovmaxResponseTime =  maxResponseTime;
+		}
+		else
+		{
+			if(ovmaxResponseTime < maxResponseTime)
+						ovmaxResponseTime = maxResponseTime;
+		}
+
+		if(ovminResponseTime == -1)
+		{
+			ovminResponseTime =  minResponseTime;
+		}
+		else
+		{
+			if(ovminResponseTime > minResponseTime)
+						ovminResponseTime = minResponseTime;
+		}
+
+		//if(ovmaxResponseTime < maxResponseTime)
+			//			ovmaxResponseTime=maxResponseTime;
+		//if(ovminResponseTime > minResponseTime)
+			//			ovminResponseTime=minResponseTime;
 		ovavgResponseTime += (avgResponseTime/totaljobs);
-  		fprintf(fptr,"Task %d Total jobs=%d\n",i+1,totaljobs);
-  		fprintf(fptr,"Abs Response Time Jitter=%f\n",maxResponseTime-minResponseTime);
+  	fprintf(fptr,"Task %d Total jobs=%d\n",i+1,totaljobs);
+  	fprintf(fptr,"Abs Response Time Jitter=%f\n",maxResponseTime-minResponseTime);
 		fprintf(fptr,"MaxResponseTime=%f\n",maxResponseTime);
 		fprintf(fptr,"MinResponseTime=%f\n",minResponseTime);
 		fprintf(fptr,"AvgResponseTime=%f\n",(avgResponseTime/totaljobs));

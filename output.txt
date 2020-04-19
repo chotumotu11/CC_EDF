@@ -112,7 +112,7 @@ AvgResponseTime=7.466044
 
 
 Overall Schedule MaxResponseTime=12.021389
-Overall Schedule MinResponseTime=4.000000
+Overall Schedule MinResponseTime=3.000000
 Overall Schedule AvgResponseTime=6.019990
 
 
