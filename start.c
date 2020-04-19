@@ -641,7 +641,7 @@ void printresponseTime(struct granularity *g,int bmax ,int numtask){
 			}
       fprintf(fptr,"Task %d total jobs=%d avgResponseTime=%f\n",i+1,totaljobs,(avgResponseTime/totaljobs));
 			fprintf(fptr,"Task %d maxResponseTime=%f , minResponseTime=%f\n",i+1,maxResponseTime,minResponseTime);
-			fprintf(fptr,"Task %d ARJ=%f\n",i+1 , maxResponseTime-minResponseTime);
+			fprintf(fptr,"Task %d Abs Response Jitter=%f\n",i+1 , maxResponseTime-minResponseTime);
 			fprintf(fptr,"%s","\n\n");
 	}
 
