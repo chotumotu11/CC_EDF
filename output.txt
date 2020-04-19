@@ -1,0 +1,387 @@
+hyperperiod=280
+Scheduling Period=280
+Total number of jobs=83
+
+
+From time 0 to 1	Task: 1 Job_no.: 1	
+From time 1 to 2	Task: 1 Job_no.: 1	
+From time 2 to 3	Task: 1 Job_no.: 1	
+From time 3 to 4	Task: 1 Job_no.: 1	
+From time 4 to 5	Task: 1 Job_no.: 1	Task: 2 Job_no.: 1	
+From time 5 to 6	Task: 2 Job_no.: 1	
+From time 6 to 7	Task: 2 Job_no.: 1	
+From time 7 to 8	Task: 2 Job_no.: 1	
+From time 8 to 9	Task: 2 Job_no.: 1	Task: 3 Job_no.: 1	
+From time 9 to 10	Task: 3 Job_no.: 1	Task: 1 Job_no.: 2	
+From time 10 to 11	Task: 1 Job_no.: 2	
+From time 11 to 12	Task: 1 Job_no.: 2	
+From time 12 to 13	Task: 1 Job_no.: 2	Task: 2 Job_no.: 2	
+From time 13 to 14	
+From time 14 to 15	Task: 2 Job_no.: 2	
+From time 15 to 16	Task: 2 Job_no.: 2	
+From time 16 to 17	Task: 2 Job_no.: 2	Task: 1 Job_no.: 3	
+From time 17 to 18	Task: 1 Job_no.: 3	
+From time 18 to 19	Task: 1 Job_no.: 3	
+From time 19 to 20	Task: 1 Job_no.: 3	Task: 3 Job_no.: 2	
+From time 20 to 21	Task: 3 Job_no.: 2	Task: 2 Job_no.: 3	
+From time 21 to 22	
+From time 22 to 23	
+From time 23 to 24	
+From time 24 to 25	Task: 2 Job_no.: 3	
+From time 25 to 26	Task: 2 Job_no.: 3	
+From time 26 to 27	Task: 2 Job_no.: 3	Task: 1 Job_no.: 4	
+From time 27 to 28	
+From time 28 to 29	Task: 1 Job_no.: 4	
+From time 29 to 30	Task: 1 Job_no.: 4	
+From time 30 to 31	Task: 1 Job_no.: 4	Task: 2 Job_no.: 4	
+From time 31 to 32	Task: 2 Job_no.: 4	
+From time 32 to 33	Task: 2 Job_no.: 4	
+From time 33 to 34	Task: 2 Job_no.: 4	Task: 1 Job_no.: 5	
+From time 34 to 35	Task: 1 Job_no.: 5	
+From time 35 to 36	Task: 1 Job_no.: 5	
+From time 36 to 37	Task: 1 Job_no.: 5	Task: 3 Job_no.: 3	
+From time 37 to 38	
+From time 38 to 39	
+From time 39 to 40	
+From time 40 to 41	Task: 3 Job_no.: 3	Task: 1 Job_no.: 6	
+From time 41 to 42	Task: 1 Job_no.: 6	
+From time 42 to 43	Task: 1 Job_no.: 6	
+From time 43 to 44	Task: 1 Job_no.: 6	Task: 2 Job_no.: 5	
+From time 44 to 45	Task: 2 Job_no.: 5	
+From time 45 to 46	Task: 2 Job_no.: 5	
+From time 46 to 47	Task: 2 Job_no.: 5	Task: 3 Job_no.: 4	
+From time 47 to 48	
+From time 48 to 49	Task: 3 Job_no.: 4	Task: 1 Job_no.: 7	
+From time 49 to 50	
+From time 50 to 51	Task: 1 Job_no.: 7	
+From time 51 to 52	Task: 1 Job_no.: 7	
+From time 52 to 53	Task: 1 Job_no.: 7	Task: 2 Job_no.: 6	
+From time 53 to 54	
+From time 54 to 55	
+From time 55 to 56	
+From time 56 to 57	Task: 2 Job_no.: 6	
+From time 57 to 58	Task: 2 Job_no.: 6	
+From time 58 to 59	Task: 2 Job_no.: 6	Task: 1 Job_no.: 8	
+From time 59 to 60	Task: 1 Job_no.: 8	
+From time 60 to 61	Task: 1 Job_no.: 8	
+From time 61 to 62	Task: 1 Job_no.: 8	Task: 3 Job_no.: 5	
+From time 62 to 63	Task: 3 Job_no.: 5	Task: 2 Job_no.: 7	
+From time 63 to 64	
+From time 64 to 65	Task: 2 Job_no.: 7	
+From time 65 to 66	Task: 2 Job_no.: 7	
+From time 66 to 67	Task: 2 Job_no.: 7	Task: 1 Job_no.: 9	
+From time 67 to 68	
+From time 68 to 69	
+From time 69 to 70	
+From time 70 to 71	Task: 1 Job_no.: 9	
+From time 71 to 72	Task: 1 Job_no.: 9	
+From time 72 to 73	Task: 1 Job_no.: 9	Task: 2 Job_no.: 8	
+From time 73 to 74	Task: 2 Job_no.: 8	
+From time 74 to 75	Task: 2 Job_no.: 8	
+From time 75 to 76	Task: 2 Job_no.: 8	Task: 1 Job_no.: 10	
+From time 76 to 77	Task: 1 Job_no.: 10	
+From time 77 to 78	Task: 1 Job_no.: 10	
+From time 78 to 79	Task: 1 Job_no.: 10	Task: 3 Job_no.: 6	
+From time 79 to 80	
+From time 80 to 81	Task: 3 Job_no.: 6	Task: 1 Job_no.: 11	
+From time 81 to 82	Task: 1 Job_no.: 11	
+From time 82 to 83	Task: 1 Job_no.: 11	
+From time 83 to 84	Task: 1 Job_no.: 11	Task: 2 Job_no.: 9	
+From time 84 to 85	Task: 2 Job_no.: 9	
+From time 85 to 86	Task: 2 Job_no.: 9	
+From time 86 to 87	Task: 2 Job_no.: 9	Task: 3 Job_no.: 7	
+From time 87 to 88	
+From time 88 to 89	Task: 1 Job_no.: 12	
+From time 89 to 90	Task: 1 Job_no.: 12	
+From time 90 to 91	Task: 1 Job_no.: 12	
+From time 91 to 92	Task: 1 Job_no.: 12	Task: 3 Job_no.: 7	Task: 2 Job_no.: 10	
+From time 92 to 93	
+From time 93 to 94	
+From time 94 to 95	
+From time 95 to 96	
+From time 96 to 97	Task: 2 Job_no.: 10	
+From time 97 to 98	Task: 2 Job_no.: 10	
+From time 98 to 99	Task: 2 Job_no.: 10	Task: 1 Job_no.: 13	
+From time 99 to 100	Task: 1 Job_no.: 13	
+From time 100 to 101	Task: 1 Job_no.: 13	
+From time 101 to 102	Task: 1 Job_no.: 13	Task: 2 Job_no.: 11	
+From time 102 to 103	Task: 2 Job_no.: 11	
+From time 103 to 104	Task: 2 Job_no.: 11	
+From time 104 to 105	Task: 2 Job_no.: 11	Task: 3 Job_no.: 8	
+From time 105 to 106	Task: 3 Job_no.: 8	Task: 1 Job_no.: 14	
+From time 106 to 107	
+From time 107 to 108	
+From time 108 to 109	
+From time 109 to 110	
+From time 110 to 111	Task: 1 Job_no.: 14	
+From time 111 to 112	Task: 1 Job_no.: 14	
+From time 112 to 113	Task: 1 Job_no.: 14	Task: 2 Job_no.: 12	
+From time 113 to 114	Task: 2 Job_no.: 12	
+From time 114 to 115	Task: 2 Job_no.: 12	
+From time 115 to 116	Task: 2 Job_no.: 12	Task: 1 Job_no.: 15	
+From time 116 to 117	Task: 1 Job_no.: 15	
+From time 117 to 118	Task: 1 Job_no.: 15	
+From time 118 to 119	Task: 1 Job_no.: 15	Task: 3 Job_no.: 9	
+From time 119 to 120	
+From time 120 to 121	Task: 3 Job_no.: 9	Task: 1 Job_no.: 16	
+From time 121 to 122	Task: 1 Job_no.: 16	
+From time 122 to 123	Task: 1 Job_no.: 16	
+From time 123 to 124	Task: 1 Job_no.: 16	Task: 2 Job_no.: 13	
+From time 124 to 125	
+From time 125 to 126	
+From time 126 to 127	Task: 2 Job_no.: 13	
+From time 127 to 128	Task: 2 Job_no.: 13	
+From time 128 to 129	Task: 2 Job_no.: 13	Task: 1 Job_no.: 17	
+From time 129 to 130	Task: 1 Job_no.: 17	
+From time 130 to 131	Task: 1 Job_no.: 17	
+From time 131 to 132	Task: 1 Job_no.: 17	Task: 3 Job_no.: 10	
+From time 132 to 133	Task: 3 Job_no.: 10	Task: 2 Job_no.: 14	
+From time 133 to 134	
+From time 134 to 135	
+From time 135 to 136	
+From time 136 to 137	Task: 2 Job_no.: 14	
+From time 137 to 138	Task: 2 Job_no.: 14	
+From time 138 to 139	Task: 2 Job_no.: 14	Task: 1 Job_no.: 18	
+From time 139 to 140	
+From time 140 to 141	Task: 1 Job_no.: 18	
+From time 141 to 142	Task: 1 Job_no.: 18	
+From time 142 to 143	Task: 1 Job_no.: 18	Task: 2 Job_no.: 15	
+From time 143 to 144	Task: 2 Job_no.: 15	
+From time 144 to 145	Task: 2 Job_no.: 15	
+From time 145 to 146	Task: 2 Job_no.: 15	Task: 1 Job_no.: 19	
+From time 146 to 147	Task: 1 Job_no.: 19	
+From time 147 to 148	Task: 1 Job_no.: 19	
+From time 148 to 149	Task: 1 Job_no.: 19	Task: 3 Job_no.: 11	
+From time 149 to 150	
+From time 150 to 151	Task: 3 Job_no.: 11	Task: 2 Job_no.: 16	
+From time 151 to 152	
+From time 152 to 153	Task: 2 Job_no.: 16	
+From time 153 to 154	Task: 2 Job_no.: 16	
+From time 154 to 155	Task: 2 Job_no.: 16	Task: 1 Job_no.: 20	
+From time 155 to 156	Task: 1 Job_no.: 20	
+From time 156 to 157	Task: 1 Job_no.: 20	
+From time 157 to 158	Task: 1 Job_no.: 20	Task: 3 Job_no.: 12	
+From time 158 to 159	
+From time 159 to 160	
+From time 160 to 161	Task: 3 Job_no.: 12	Task: 1 Job_no.: 21	
+From time 161 to 162	Task: 1 Job_no.: 21	
+From time 162 to 163	Task: 1 Job_no.: 21	
+From time 163 to 164	Task: 1 Job_no.: 21	Task: 2 Job_no.: 17	
+From time 164 to 165	
+From time 165 to 166	
+From time 166 to 167	
+From time 167 to 168	
+From time 168 to 169	Task: 2 Job_no.: 17	
+From time 169 to 170	Task: 2 Job_no.: 17	
+From time 170 to 171	Task: 2 Job_no.: 17	Task: 1 Job_no.: 22	
+From time 171 to 172	Task: 1 Job_no.: 22	
+From time 172 to 173	Task: 1 Job_no.: 22	
+From time 173 to 174	Task: 1 Job_no.: 22	Task: 2 Job_no.: 18	
+From time 174 to 175	Task: 2 Job_no.: 18	
+From time 175 to 176	Task: 2 Job_no.: 18	
+From time 176 to 177	Task: 2 Job_no.: 18	Task: 3 Job_no.: 13	
+From time 177 to 178	Task: 3 Job_no.: 13	Task: 1 Job_no.: 23	
+From time 178 to 179	
+From time 179 to 180	
+From time 180 to 181	Task: 1 Job_no.: 23	
+From time 181 to 182	Task: 1 Job_no.: 23	
+From time 182 to 183	Task: 1 Job_no.: 23	Task: 2 Job_no.: 19	
+From time 183 to 184	Task: 2 Job_no.: 19	
+From time 184 to 185	Task: 2 Job_no.: 19	
+From time 185 to 186	Task: 2 Job_no.: 19	Task: 1 Job_no.: 24	
+From time 186 to 187	Task: 1 Job_no.: 24	
+From time 187 to 188	Task: 1 Job_no.: 24	
+From time 188 to 189	Task: 1 Job_no.: 24	Task: 3 Job_no.: 14	
+From time 189 to 190	
+From time 190 to 191	Task: 3 Job_no.: 14	Task: 2 Job_no.: 20	
+From time 191 to 192	
+From time 192 to 193	Task: 2 Job_no.: 20	
+From time 193 to 194	Task: 2 Job_no.: 20	
+From time 194 to 195	Task: 2 Job_no.: 20	Task: 1 Job_no.: 25	
+From time 195 to 196	
+From time 196 to 197	Task: 1 Job_no.: 25	
+From time 197 to 198	Task: 1 Job_no.: 25	
+From time 198 to 199	Task: 1 Job_no.: 25	Task: 3 Job_no.: 15	
+From time 199 to 200	
+From time 200 to 201	Task: 1 Job_no.: 26	
+From time 201 to 202	Task: 1 Job_no.: 26	
+From time 202 to 203	Task: 1 Job_no.: 26	
+From time 203 to 204	Task: 1 Job_no.: 26	Task: 2 Job_no.: 21	
+From time 204 to 205	Task: 2 Job_no.: 21	
+From time 205 to 206	Task: 2 Job_no.: 21	
+From time 206 to 207	Task: 3 Job_no.: 15	
+From time 207 to 208	
+From time 208 to 209	Task: 1 Job_no.: 27	
+From time 209 to 210	
+From time 210 to 211	Task: 1 Job_no.: 27	
+From time 211 to 212	Task: 1 Job_no.: 27	
+From time 212 to 213	Task: 2 Job_no.: 22	
+From time 213 to 214	Task: 2 Job_no.: 22	
+From time 214 to 215	Task: 2 Job_no.: 22	
+From time 215 to 216	Task: 3 Job_no.: 16	
+From time 216 to 217	Task: 1 Job_no.: 28	
+From time 217 to 218	
+From time 218 to 219	
+From time 219 to 220	
+From time 220 to 221	Task: 1 Job_no.: 28	
+From time 221 to 222	Task: 1 Job_no.: 28	
+From time 222 to 223	Task: 2 Job_no.: 23	
+From time 223 to 224	
+From time 224 to 225	Task: 2 Job_no.: 23	
+From time 225 to 226	Task: 2 Job_no.: 23	
+From time 226 to 227	Task: 1 Job_no.: 29	
+From time 227 to 228	Task: 1 Job_no.: 29	
+From time 228 to 229	Task: 1 Job_no.: 29	
+From time 229 to 230	Task: 3 Job_no.: 17	
+From time 230 to 231	Task: 2 Job_no.: 24	
+From time 231 to 232	
+From time 232 to 233	Task: 2 Job_no.: 24	
+From time 233 to 234	Task: 2 Job_no.: 24	
+From time 234 to 235	Task: 1 Job_no.: 30	
+From time 235 to 236	
+From time 236 to 237	
+From time 237 to 238	
+From time 238 to 239	Task: 1 Job_no.: 30	
+From time 239 to 240	Task: 1 Job_no.: 30	
+From time 240 to 241	Task: 1 Job_no.: 31	
+From time 241 to 242	Task: 1 Job_no.: 31	
+From time 242 to 243	Task: 1 Job_no.: 31	
+From time 243 to 244	Task: 2 Job_no.: 25	
+From time 244 to 245	Task: 2 Job_no.: 25	
+From time 245 to 246	Task: 2 Job_no.: 25	
+From time 246 to 247	Task: 3 Job_no.: 18	
+From time 247 to 248	
+From time 248 to 249	Task: 1 Job_no.: 32	
+From time 249 to 250	
+From time 250 to 251	Task: 1 Job_no.: 32	
+From time 251 to 252	Task: 1 Job_no.: 32	
+From time 252 to 253	Task: 2 Job_no.: 26	
+From time 253 to 254	Task: 2 Job_no.: 26	
+From time 254 to 255	Task: 2 Job_no.: 26	
+From time 255 to 256	Task: 3 Job_no.: 19	
+From time 256 to 257	Task: 1 Job_no.: 33	
+From time 257 to 258	
+From time 258 to 259	
+From time 259 to 260	
+From time 260 to 261	Task: 1 Job_no.: 33	
+From time 261 to 262	Task: 1 Job_no.: 33	
+From time 262 to 263	Task: 2 Job_no.: 27	
+From time 263 to 264	
+From time 264 to 265	Task: 2 Job_no.: 27	
+From time 265 to 266	Task: 2 Job_no.: 27	
+From time 266 to 267	Task: 1 Job_no.: 34	
+From time 267 to 268	Task: 1 Job_no.: 34	
+From time 268 to 269	Task: 1 Job_no.: 34	
+From time 269 to 270	Task: 3 Job_no.: 20	
+From time 270 to 271	Task: 2 Job_no.: 28	
+From time 271 to 272	
+From time 272 to 273	Task: 2 Job_no.: 28	
+From time 273 to 274	Task: 2 Job_no.: 28	
+From time 274 to 275	Task: 1 Job_no.: 35	
+From time 275 to 276	
+From time 276 to 277	
+From time 277 to 278	
+From time 278 to 279	
+From time 279 to 280	
+
+
+Task=1 Job=1 arrival=0 exe=3.000 start=0.000 stop=4.011
+Task=2 Job=1 arrival=0 exe=3.000 start=4.011 stop=8.021
+Task=3 Job=1 arrival=0 exe=1.000 start=8.021 stop=9.021
+Task=1 Job=2 arrival=8 exe=3.000 start=9.021 stop=12.021
+Task=2 Job=2 arrival=10 exe=3.000 start=12.021 stop=16.021
+Task=1 Job=3 arrival=16 exe=3.000 start=16.021 stop=19.021
+Task=3 Job=2 arrival=14 exe=1.000 start=19.021 stop=20.021
+Task=2 Job=3 arrival=20 exe=3.000 start=20.021 stop=26.021
+Task=1 Job=4 arrival=24 exe=3.000 start=26.021 stop=30.021
+Task=2 Job=4 arrival=30 exe=3.000 start=30.021 stop=33.021
+Task=1 Job=5 arrival=32 exe=3.000 start=33.021 stop=36.021
+Task=3 Job=3 arrival=28 exe=1.000 start=36.021 stop=40.021
+Task=1 Job=6 arrival=40 exe=3.000 start=40.021 stop=43.021
+Task=2 Job=5 arrival=40 exe=3.000 start=43.021 stop=46.021
+Task=3 Job=4 arrival=42 exe=1.000 start=46.021 stop=48.021
+Task=1 Job=7 arrival=48 exe=3.000 start=48.021 stop=52.021
+Task=2 Job=6 arrival=50 exe=3.000 start=52.021 stop=58.021
+Task=1 Job=8 arrival=56 exe=3.000 start=58.021 stop=61.021
+Task=3 Job=5 arrival=56 exe=1.000 start=61.021 stop=62.021
+Task=2 Job=7 arrival=60 exe=3.000 start=62.021 stop=66.021
+Task=1 Job=9 arrival=64 exe=3.000 start=66.021 stop=72.021
+Task=2 Job=8 arrival=70 exe=3.000 start=72.021 stop=75.021
+Task=1 Job=10 arrival=72 exe=3.000 start=75.021 stop=78.021
+Task=3 Job=6 arrival=70 exe=1.000 start=78.021 stop=80.021
+Task=1 Job=11 arrival=80 exe=3.000 start=80.021 stop=83.021
+Task=2 Job=9 arrival=80 exe=3.000 start=83.021 stop=86.021
+Task=3 Job=7 arrival=84 exe=1.000 start=86.021 stop=91.021
+Task=1 Job=12 arrival=88 exe=3.000 start=88.000 stop=91.000
+Task=2 Job=10 arrival=90 exe=3.000 start=91.021 stop=98.021
+Task=1 Job=13 arrival=96 exe=3.000 start=98.021 stop=101.021
+Task=2 Job=11 arrival=100 exe=3.000 start=101.021 stop=104.021
+Task=3 Job=8 arrival=98 exe=1.000 start=104.021 stop=105.021
+Task=1 Job=14 arrival=104 exe=3.000 start=105.021 stop=112.021
+Task=2 Job=12 arrival=110 exe=3.000 start=112.021 stop=115.021
+Task=1 Job=15 arrival=112 exe=3.000 start=115.021 stop=118.021
+Task=3 Job=9 arrival=112 exe=1.000 start=118.021 stop=120.021
+Task=1 Job=16 arrival=120 exe=3.000 start=120.021 stop=123.021
+Task=2 Job=13 arrival=120 exe=3.000 start=123.021 stop=128.021
+Task=1 Job=17 arrival=128 exe=3.000 start=128.021 stop=131.021
+Task=3 Job=10 arrival=126 exe=1.000 start=131.021 stop=132.021
+Task=2 Job=14 arrival=130 exe=3.000 start=132.021 stop=138.021
+Task=1 Job=18 arrival=136 exe=3.000 start=138.021 stop=142.021
+Task=2 Job=15 arrival=140 exe=3.000 start=142.021 stop=145.021
+Task=1 Job=19 arrival=144 exe=3.000 start=145.021 stop=148.021
+Task=3 Job=11 arrival=140 exe=1.000 start=148.021 stop=150.021
+Task=2 Job=16 arrival=150 exe=3.000 start=150.021 stop=154.021
+Task=1 Job=20 arrival=152 exe=3.000 start=154.021 stop=157.021
+Task=3 Job=12 arrival=154 exe=1.000 start=157.021 stop=160.021
+Task=1 Job=21 arrival=160 exe=3.000 start=160.021 stop=163.021
+Task=2 Job=17 arrival=160 exe=3.000 start=163.021 stop=170.021
+Task=1 Job=22 arrival=168 exe=3.000 start=170.021 stop=173.021
+Task=2 Job=18 arrival=170 exe=3.000 start=173.021 stop=176.021
+Task=3 Job=13 arrival=168 exe=1.000 start=176.021 stop=177.021
+Task=1 Job=23 arrival=176 exe=3.000 start=177.021 stop=182.021
+Task=2 Job=19 arrival=180 exe=3.000 start=182.021 stop=185.021
+Task=1 Job=24 arrival=184 exe=3.000 start=185.021 stop=188.021
+Task=3 Job=14 arrival=182 exe=1.000 start=188.021 stop=190.021
+Task=2 Job=20 arrival=190 exe=3.000 start=190.021 stop=194.021
+Task=1 Job=25 arrival=192 exe=3.000 start=194.021 stop=198.021
+Task=3 Job=15 arrival=196 exe=1.000 start=198.021 stop=206.021
+Task=1 Job=26 arrival=200 exe=3.000 start=200.000 stop=203.000
+Task=2 Job=21 arrival=200 exe=3.000 start=203.000 stop=206.000
+Task=1 Job=27 arrival=208 exe=3.000 start=208.000 stop=212.000
+Task=2 Job=22 arrival=210 exe=3.000 start=212.000 stop=215.000
+Task=3 Job=16 arrival=210 exe=1.000 start=215.000 stop=216.000
+Task=1 Job=28 arrival=216 exe=3.000 start=216.000 stop=222.000
+Task=2 Job=23 arrival=220 exe=3.000 start=222.000 stop=226.000
+Task=1 Job=29 arrival=224 exe=3.000 start=226.000 stop=229.000
+Task=3 Job=17 arrival=224 exe=1.000 start=229.000 stop=230.000
+Task=2 Job=24 arrival=230 exe=3.000 start=230.000 stop=234.000
+Task=1 Job=30 arrival=232 exe=3.000 start=234.000 stop=240.000
+Task=1 Job=31 arrival=240 exe=3.000 start=240.000 stop=243.000
+Task=2 Job=25 arrival=240 exe=3.000 start=243.000 stop=246.000
+Task=3 Job=18 arrival=238 exe=1.000 start=246.000 stop=247.000
+Task=1 Job=32 arrival=248 exe=3.000 start=248.000 stop=252.000
+Task=2 Job=26 arrival=250 exe=3.000 start=252.000 stop=255.000
+Task=3 Job=19 arrival=252 exe=1.000 start=255.000 stop=256.000
+Task=1 Job=33 arrival=256 exe=3.000 start=256.000 stop=262.000
+Task=2 Job=27 arrival=260 exe=3.000 start=262.000 stop=266.000
+Task=1 Job=34 arrival=264 exe=3.000 start=266.000 stop=269.000
+Task=3 Job=20 arrival=266 exe=1.000 start=269.000 stop=270.000
+Task=2 Job=28 arrival=270 exe=3.000 start=270.000 stop=274.000
+Task=1 Job=35 arrival=272 exe=3.000 start=274.000 stop=0.000
+
+
+Task 1 total jobs=35 avgResponseTime=4.614363
+Task 1 maxResponseTime=8.021393 , minResponseTime=3.000000
+Task 1 ARJ=5.021393
+
+
+Task 2 total jobs=28 avgResponseTime=5.836708
+Task 2 maxResponseTime=10.021393 , minResponseTime=3.021389
+Task 2 ARJ=7.000004
+
+
+Task 3 total jobs=20 avgResponseTime=7.466044
+Task 3 maxResponseTime=12.021389 , minResponseTime=4.000000
+Task 3 ARJ=8.021389
+
+
