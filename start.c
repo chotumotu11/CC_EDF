@@ -57,6 +57,7 @@ float calefficiency(struct taskutil* tu, int numoftasks){
 
 }
 
+
 int flageff=0;
 float findfreq(float *freq,float maxfreq,int numoftasks,struct taskutil *tu,int numfreq){
 	for(int i = 0;i<numfreq;i++){
@@ -410,21 +411,14 @@ void printreadyqueue(struct job * head){
 }
 
 void jobschedule(struct job * joblist,struct granularity *g,int bmax,struct job *head,int totaljobs,float freq,float maxfreq,struct taskutil *tu,float *freqarray,int numoftasks,int numfreq){
-	printf("f=%f,mf=%f",freq,maxfreq);
 	for(int i =0 ;i<bmax;i++){
 		head = loadtoreadyqueuewitharrivaltime(joblist,tu,(g+i)->starttime,totaljobs,head);
 		while(g[i].slack!=0 && head!=NULL){
 			if(jobexecuting == NULL){
 				jobexecuting = head;
-				printf("\ntask=%d job=%d",jobexecuting->oftask,jobexecuting->job);
 				head=removeheadfromjob(head);
-				printf("\nbef jobexecuting->slack=%f",jobexecuting->slack);
 				jobexecuting->slack = (jobexecuting->slack)/(freq/maxfreq);
-				printf("\ng[%d].slack=%f",i,g[i].slack);
-				printf("\njobexecuting->wctexe=%f",jobexecuting->wctexe);
-				printf("\njobexecuting->slack=%f",jobexecuting->slack);
 				jobexecuting->slack+=(0.1+0.05);//decision making and freq calc overhead
-				printf("\nchange jobexecuting->slack=%f",jobexecuting->slack);
 				if(g[i].slack < jobexecuting->slack){
 					jobexecuting->slack = (jobexecuting->slack)-g[i].slack;
 					g[i].slack = 0;
@@ -444,12 +438,8 @@ void jobschedule(struct job * joblist,struct granularity *g,int bmax,struct job 
 					freq = findfreq(freqarray,maxfreq,numoftasks,tu,numfreq);
 					inserttoreadyqueuewithoutcopy(jobexecuting,head);
 					jobexecuting = head;
-					printf("\ndl task=%d job=%d",jobexecuting->oftask,jobexecuting->job);
 					jobexecuting->slack = (jobexecuting->slack)/(freq/maxfreq);
-					printf("\ndl g[%d].slack=%f",i,g[i].slack);
-					printf("\njobexecuting->slack=%f",jobexecuting->slack);
 					jobexecuting->slack+=(0.2+0.1+0.05);//preemption, decision making and freq calc overhead
-					printf("\nchange jobexecuting->slack=%f",jobexecuting->slack);
 					if(g[i].slack < jobexecuting->slack){
 						jobexecuting->slack = (jobexecuting->slack)-g[i].slack;
 						g[i].slack = 0;
@@ -464,11 +454,8 @@ void jobschedule(struct job * joblist,struct granularity *g,int bmax,struct job 
 						jobexecuting = NULL;
 					}
 
-				}else{//job continuing
-					printf("\ndl else task=%d job=%d",jobexecuting->oftask,jobexecuting->job);
+				}else{
 					jobexecuting->slack = (jobexecuting->slack)/(freq/maxfreq);
-					printf("\ndl else g[%d].slack=%f",i,g[i].slack);
-					printf("\njobexecuting->slack=%f",jobexecuting->slack);
 					if(g[i].slack < jobexecuting->slack){
 						jobexecuting->slack = (jobexecuting->slack)-g[i].slack;
 						g[i].slack = 0;
@@ -590,18 +577,13 @@ int main(int argc,char **argv){
 	// Now creating the ready queue. This will be sorted based on absolute deadline.
 	struct job* head = NULL;
 	float optimalfreq = findfreq(freq,freq[nfreq-1],n,tu,nfreq);
+	//printf("The static freq is %f\n",optimalfreq);
 	if(flageff==0)
 	{
 		printf("\nSchedule not possible because utilization>100%%");
 		exit(0);
 	}
-	//printf("The static freq is %f\n",optimalfreq);
 	jobschedule(newjoblist,tl,bmax,head,totalnumjobs,optimalfreq,freq[nfreq-1],tu,freq,n,nfreq);
 	printschedule(tl,bmax);
-	//head = loadtoreadyqueuewitharrivaltime(newjoblist,0,n,head);
-	//printreadyqueue(head);
-	//wcetapply();
-	//wcetapplyalljobs(newjoblist,totalnumjobs);
-	//printerj(newjoblist,totalnumjobs);
 	return 0;
 }
