@@ -423,8 +423,8 @@ void jobschedule(struct job * joblist,struct granularity *g,int bmax,struct job 
 				printf("\ng[%d].slack=%f",i,g[i].slack);
 				printf("\njobexecuting->wctexe=%f",jobexecuting->wctexe);
 				printf("\njobexecuting->slack=%f",jobexecuting->slack);
-				g[i].slack-=(0.1+0.05);//decision making and freq calc overhead
-				printf("\nchange g[%d].slack=%f",i,g[i].slack);
+				jobexecuting->slack+=(0.1+0.05);//decision making and freq calc overhead
+				printf("\nchange jobexecuting->slack=%f",jobexecuting->slack);
 				if(g[i].slack < jobexecuting->slack){
 					jobexecuting->slack = (jobexecuting->slack)-g[i].slack;
 					g[i].slack = 0;
@@ -448,8 +448,8 @@ void jobschedule(struct job * joblist,struct granularity *g,int bmax,struct job 
 					jobexecuting->slack = (jobexecuting->slack)/(freq/maxfreq);
 					printf("\ndl g[%d].slack=%f",i,g[i].slack);
 					printf("\njobexecuting->slack=%f",jobexecuting->slack);
-					g[i].slack-=(0.2+0.1+0.05);//preemption, decision making and freq calc overhead
-					printf("\ndl change g[%d].slack=%f",i,g[i].slack);
+					jobexecuting->slack+=(0.2+0.1+0.05);//preemption, decision making and freq calc overhead
+					printf("\nchange jobexecuting->slack=%f",jobexecuting->slack);
 					if(g[i].slack < jobexecuting->slack){
 						jobexecuting->slack = (jobexecuting->slack)-g[i].slack;
 						g[i].slack = 0;
