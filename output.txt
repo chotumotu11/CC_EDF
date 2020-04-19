@@ -1,0 +1,118 @@
+Hyperperiod=280
+First inphase time=0
+Scheduling Period: From=0 To=280
+Total number of jobs=83
+Number of context switches=86
+
+
+Task=1 Job=1 Arrival=0 WCET=3.000 ActualStart=0.000 ActualStop=4.011
+Task=2 Job=1 Arrival=0 WCET=3.000 ActualStart=4.011 ActualStop=8.021
+Task=3 Job=1 Arrival=0 WCET=1.000 ActualStart=8.021 ActualStop=9.021
+Task=1 Job=2 Arrival=8 WCET=3.000 ActualStart=9.021 ActualStop=12.021
+Task=2 Job=2 Arrival=10 WCET=3.000 ActualStart=12.021 ActualStop=16.021
+Task=1 Job=3 Arrival=16 WCET=3.000 ActualStart=16.021 ActualStop=19.021
+Task=3 Job=2 Arrival=14 WCET=1.000 ActualStart=19.021 ActualStop=20.021
+Task=2 Job=3 Arrival=20 WCET=3.000 ActualStart=20.021 ActualStop=26.021
+Task=1 Job=4 Arrival=24 WCET=3.000 ActualStart=26.021 ActualStop=30.021
+Task=2 Job=4 Arrival=30 WCET=3.000 ActualStart=30.021 ActualStop=33.021
+Task=1 Job=5 Arrival=32 WCET=3.000 ActualStart=33.021 ActualStop=36.021
+Task=3 Job=3 Arrival=28 WCET=1.000 ActualStart=36.021 ActualStop=40.021
+Task=1 Job=6 Arrival=40 WCET=3.000 ActualStart=40.021 ActualStop=43.021
+Task=2 Job=5 Arrival=40 WCET=3.000 ActualStart=43.021 ActualStop=46.021
+Task=3 Job=4 Arrival=42 WCET=1.000 ActualStart=46.021 ActualStop=48.021
+Task=1 Job=7 Arrival=48 WCET=3.000 ActualStart=48.021 ActualStop=52.021
+Task=2 Job=6 Arrival=50 WCET=3.000 ActualStart=52.021 ActualStop=58.021
+Task=1 Job=8 Arrival=56 WCET=3.000 ActualStart=58.021 ActualStop=61.021
+Task=3 Job=5 Arrival=56 WCET=1.000 ActualStart=61.021 ActualStop=62.021
+Task=2 Job=7 Arrival=60 WCET=3.000 ActualStart=62.021 ActualStop=66.021
+Task=1 Job=9 Arrival=64 WCET=3.000 ActualStart=66.021 ActualStop=72.021
+Task=2 Job=8 Arrival=70 WCET=3.000 ActualStart=72.021 ActualStop=75.021
+Task=1 Job=10 Arrival=72 WCET=3.000 ActualStart=75.021 ActualStop=78.021
+Task=3 Job=6 Arrival=70 WCET=1.000 ActualStart=78.021 ActualStop=80.021
+Task=1 Job=11 Arrival=80 WCET=3.000 ActualStart=80.021 ActualStop=83.021
+Task=2 Job=9 Arrival=80 WCET=3.000 ActualStart=83.021 ActualStop=86.021
+Task=3 Job=7 Arrival=84 WCET=1.000 ActualStart=86.021 ActualStop=91.021
+Task=1 Job=12 Arrival=88 WCET=3.000 ActualStart=88.000 ActualStop=91.000
+Task=2 Job=10 Arrival=90 WCET=3.000 ActualStart=91.021 ActualStop=98.021
+Task=1 Job=13 Arrival=96 WCET=3.000 ActualStart=98.021 ActualStop=101.021
+Task=2 Job=11 Arrival=100 WCET=3.000 ActualStart=101.021 ActualStop=104.021
+Task=3 Job=8 Arrival=98 WCET=1.000 ActualStart=104.021 ActualStop=105.021
+Task=1 Job=14 Arrival=104 WCET=3.000 ActualStart=105.021 ActualStop=112.021
+Task=2 Job=12 Arrival=110 WCET=3.000 ActualStart=112.021 ActualStop=115.021
+Task=1 Job=15 Arrival=112 WCET=3.000 ActualStart=115.021 ActualStop=118.021
+Task=3 Job=9 Arrival=112 WCET=1.000 ActualStart=118.021 ActualStop=120.021
+Task=1 Job=16 Arrival=120 WCET=3.000 ActualStart=120.021 ActualStop=123.021
+Task=2 Job=13 Arrival=120 WCET=3.000 ActualStart=123.021 ActualStop=128.021
+Task=1 Job=17 Arrival=128 WCET=3.000 ActualStart=128.021 ActualStop=131.021
+Task=3 Job=10 Arrival=126 WCET=1.000 ActualStart=131.021 ActualStop=132.021
+Task=2 Job=14 Arrival=130 WCET=3.000 ActualStart=132.021 ActualStop=138.021
+Task=1 Job=18 Arrival=136 WCET=3.000 ActualStart=138.021 ActualStop=142.021
+Task=2 Job=15 Arrival=140 WCET=3.000 ActualStart=142.021 ActualStop=145.021
+Task=1 Job=19 Arrival=144 WCET=3.000 ActualStart=145.021 ActualStop=148.021
+Task=3 Job=11 Arrival=140 WCET=1.000 ActualStart=148.021 ActualStop=150.021
+Task=2 Job=16 Arrival=150 WCET=3.000 ActualStart=150.021 ActualStop=154.021
+Task=1 Job=20 Arrival=152 WCET=3.000 ActualStart=154.021 ActualStop=157.021
+Task=3 Job=12 Arrival=154 WCET=1.000 ActualStart=157.021 ActualStop=160.021
+Task=1 Job=21 Arrival=160 WCET=3.000 ActualStart=160.021 ActualStop=163.021
+Task=2 Job=17 Arrival=160 WCET=3.000 ActualStart=163.021 ActualStop=170.021
+Task=1 Job=22 Arrival=168 WCET=3.000 ActualStart=170.021 ActualStop=173.021
+Task=2 Job=18 Arrival=170 WCET=3.000 ActualStart=173.021 ActualStop=176.021
+Task=3 Job=13 Arrival=168 WCET=1.000 ActualStart=176.021 ActualStop=177.021
+Task=1 Job=23 Arrival=176 WCET=3.000 ActualStart=177.021 ActualStop=182.021
+Task=2 Job=19 Arrival=180 WCET=3.000 ActualStart=182.021 ActualStop=185.021
+Task=1 Job=24 Arrival=184 WCET=3.000 ActualStart=185.021 ActualStop=188.021
+Task=3 Job=14 Arrival=182 WCET=1.000 ActualStart=188.021 ActualStop=190.021
+Task=2 Job=20 Arrival=190 WCET=3.000 ActualStart=190.021 ActualStop=194.021
+Task=1 Job=25 Arrival=192 WCET=3.000 ActualStart=194.021 ActualStop=198.021
+Task=3 Job=15 Arrival=196 WCET=1.000 ActualStart=198.021 ActualStop=206.021
+Task=1 Job=26 Arrival=200 WCET=3.000 ActualStart=200.000 ActualStop=203.000
+Task=2 Job=21 Arrival=200 WCET=3.000 ActualStart=203.000 ActualStop=206.000
+Task=1 Job=27 Arrival=208 WCET=3.000 ActualStart=208.000 ActualStop=212.000
+Task=2 Job=22 Arrival=210 WCET=3.000 ActualStart=212.000 ActualStop=215.000
+Task=3 Job=16 Arrival=210 WCET=1.000 ActualStart=215.000 ActualStop=216.000
+Task=1 Job=28 Arrival=216 WCET=3.000 ActualStart=216.000 ActualStop=222.000
+Task=2 Job=23 Arrival=220 WCET=3.000 ActualStart=222.000 ActualStop=226.000
+Task=1 Job=29 Arrival=224 WCET=3.000 ActualStart=226.000 ActualStop=229.000
+Task=3 Job=17 Arrival=224 WCET=1.000 ActualStart=229.000 ActualStop=230.000
+Task=2 Job=24 Arrival=230 WCET=3.000 ActualStart=230.000 ActualStop=234.000
+Task=1 Job=30 Arrival=232 WCET=3.000 ActualStart=234.000 ActualStop=240.000
+Task=1 Job=31 Arrival=240 WCET=3.000 ActualStart=240.000 ActualStop=243.000
+Task=2 Job=25 Arrival=240 WCET=3.000 ActualStart=243.000 ActualStop=246.000
+Task=3 Job=18 Arrival=238 WCET=1.000 ActualStart=246.000 ActualStop=247.000
+Task=1 Job=32 Arrival=248 WCET=3.000 ActualStart=248.000 ActualStop=252.000
+Task=2 Job=26 Arrival=250 WCET=3.000 ActualStart=252.000 ActualStop=255.000
+Task=3 Job=19 Arrival=252 WCET=1.000 ActualStart=255.000 ActualStop=256.000
+Task=1 Job=33 Arrival=256 WCET=3.000 ActualStart=256.000 ActualStop=262.000
+Task=2 Job=27 Arrival=260 WCET=3.000 ActualStart=262.000 ActualStop=266.000
+Task=1 Job=34 Arrival=264 WCET=3.000 ActualStart=266.000 ActualStop=269.000
+Task=3 Job=20 Arrival=266 WCET=1.000 ActualStart=269.000 ActualStop=270.000
+Task=2 Job=28 Arrival=270 WCET=3.000 ActualStart=270.000 ActualStop=274.000
+Task=1 Job=35 Arrival=272 WCET=3.000 ActualStart=274.000 ActualStop=277.000
+
+
+Task 1 Total jobs=35
+Abs Response Time Jitter=5.021393
+MaxResponseTime=8.021393
+MinResponseTime=3.000000
+AvgResponseTime=4.757220
+
+
+Task 2 Total jobs=28
+Abs Response Time Jitter=7.000004
+MaxResponseTime=10.021393
+MinResponseTime=3.021389
+AvgResponseTime=5.836708
+
+
+Task 3 Total jobs=20
+Abs Response Time Jitter=8.021389
+MaxResponseTime=12.021389
+MinResponseTime=4.000000
+AvgResponseTime=7.466044
+
+
+Overall Schedule MaxResponseTime=12.021389
+Overall Schedule MinResponseTime=4.000000
+Overall Schedule AvgResponseTime=6.019990
+
+
